@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+:root {
+  font-size: 18px;
+
+  font-family: "Barlow";
+
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, 
+button {
+  font-family: 'Fraunces';
+}
+
+button {
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-repeat: cover;
+  shape-margin: .75rem;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.navigation {
+  position: fixed;
+  padding: 2rem 3rem;
+  top: 0;
+
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+}
+
+.navigation__logo {
+  display: inline;
+  max-width: fit-content;
+}
+
+.navigation__nav {
+  max-width: fit-content;
+  margin-inline-start: auto;
+  
+  color: var(--white);
+}
+
+.nav__lists {
+  display: flex;
+  gap: 3rem;
+  
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.nav__lists-list button {
+  padding: 1rem 1.75rem;
+  border-radius: 100svh;
+}
