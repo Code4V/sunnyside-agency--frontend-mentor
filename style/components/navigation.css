@@ -1,0 +1,39 @@
+.navigation {
+  position: fixed;
+  padding: 2rem 3rem;
+  top: 0;
+
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  z-index: 99;
+
+}
+
+.navigation__logo {
+  display: inline;
+  min-width: 12.5rem;
+}
+
+.navigation__nav {
+  max-width: fit-content;
+  margin-inline-start: auto;
+  
+  color: var(--white);
+}
+
+.nav__lists {
+  display: flex;
+  gap: 3rem;
+  font-size: 1.25rem;
+  
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.nav__lists-list button {
+  font-size: 1.25rem;
+  padding: 1rem 1.75rem;
+  border-radius: 100svh;
+}

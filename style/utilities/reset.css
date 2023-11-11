@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, 
+button {
+  font-family: 'Fraunces';
+}
+
+button {
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-repeat: cover;
+  shape-margin: .75rem;
+}
+
+ul{
+  list-style-type: none;
+}
