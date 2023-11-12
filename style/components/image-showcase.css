@@ -1,0 +1,22 @@
+.image-showcase {
+  display: grid;
+ 
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image-showcase div>img{
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+
+@media (min-width: 764px) {
+  .image-showcase {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .image-showcase div>img{
+    aspect-ratio: auto;
+  }
+}
+
+

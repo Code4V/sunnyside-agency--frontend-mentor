@@ -1,0 +1,32 @@
+.card {
+  max-width: 20rem;
+}
+
+.card > *:not(:first-child) {
+  margin-block-start: 3rem;
+}
+
+
+.card img {
+  border-radius: 100%;
+  width: 4rem;
+}
+
+.card p {
+  line-height: 1.65rem;
+  color: var(--dark-blue-desat-gray);
+}
+
+.card__information h5{
+  font-weight: 800;
+  font-size: 1rem;
+
+  margin-block-end: .7rem;
+  color: var(--dark-blue-desat)
+}
+
+.card__information span {
+  font-size: .8rem;
+
+  color: var(--blue-gray);
+}

@@ -1,0 +1,32 @@
+.testimonials {
+  margin-block: 8rem;
+  text-align: center;
+}
+
+.testimonials h4 {
+  text-transform: uppercase; 
+  letter-spacing: .35rem; 
+
+  color: var(--blue-gray)
+}
+
+.testimonials__testimonies {
+  display: flex;
+
+  flex-flow: row wrap;
+
+  margin-block-start: 4rem;
+  padding-inline: 1rem;
+
+  justify-content: center;
+
+  gap: 3.5rem;
+}
+
+@media (min-width: 764px) {
+  .testimonials__testimonies {
+    padding-inline: 15rem;
+
+    gap: 2rem;
+  }
+}

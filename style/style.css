@@ -1,6 +1,10 @@
 @import url('./abstracts/base.css');
+@import url('./utilities/reset.css');
+
 @import url('./components/header.css');
 @import url('./components/navigation.css');
-@import url('./utilities/reset.css');
 @import url('./components/aboutus.css');
+@import url('./components/testimonials.css');
+@import url('./components/cards.css');
+@import url('./components/image-showcase.css');
 
