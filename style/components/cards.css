@@ -1,5 +1,5 @@
 .card {
-  max-width: 20rem;
+  max-width: 21.5rem;
 }
 
 .card > *:not(:first-child) {
@@ -13,20 +13,21 @@
 }
 
 .card p {
-  line-height: 1.65rem;
+  font-size: 1.1rem;
+  line-height: 1.75rem;
   color: var(--dark-blue-desat-gray);
 }
 
 .card__information h5{
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 1.25rem;
 
   margin-block-end: .7rem;
   color: var(--dark-blue-desat)
 }
 
 .card__information span {
-  font-size: .8rem;
+  font-size: 1rem;
 
   color: var(--blue-gray);
 }

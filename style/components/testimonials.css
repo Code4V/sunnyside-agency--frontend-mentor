@@ -18,15 +18,13 @@
   margin-block-start: 4rem;
   padding-inline: 1rem;
 
-  justify-content: center;
+  justify-content: space-evenly;
 
-  gap: 3.5rem;
 }
 
 @media (min-width: 764px) {
   .testimonials__testimonies {
     padding-inline: 15rem;
 
-    gap: 2rem;
   }
 }
