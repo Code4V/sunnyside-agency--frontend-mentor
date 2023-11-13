@@ -1,6 +1,6 @@
 .navigation {
   position: fixed;
-  padding: 2rem 3rem;
+  padding: 1rem 1rem;
   top: 0;
   
   display: flex;
@@ -12,10 +12,15 @@
 
 .navigation__logo {
   display: inline;
-  min-width: 12.5rem;
+  fill: var(--white);
+  min-height: 2.5rem;
+
+  min-width: 6rem;
+  max-width: 13rem;
 }
 
 .navigation__nav {
+  display: none !important;
   max-width: fit-content;
   margin-inline-start: auto;
   
@@ -24,12 +29,56 @@
 
 .navigation--footer {
   position: static;
-
+  
   margin-block-end: 5.5rem;
 }
 
 .nav {
- display: flex;
+  display: flex;
+}
+
+.nav--show {
+  display: block !important;
+  position: absolute;
+
+  padding: 2rem 4rem;
+
+  top: 150%;
+  left: 50%;
+
+  transform: translateX(-50%);
+  background-color: var(--white);
+
+  animation: appear 250ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+.nav--show > .nav__lists {
+  position: relative;
+  flex-flow: column wrap;
+  gap: 2rem;
+
+  color: var(--blue-gray);
+}
+
+.nav--show > .nav__lists::after {
+  position: absolute;
+  content: "";
+  border-right: 1.5rem solid var(--white);
+  border-top: 1.5rem solid transparent;
+  width: 2rem;
+  height: 2rem;
+
+  inset: 0;
+
+  top: -25%;
+  left: 105.05%;
+
+  z-index: -1;
+}
+
+
+.nav--show .nav__lists-list button {
+  background-color: var(--yellow) !important;
 }
 
 .nav__lists {
@@ -54,14 +103,22 @@
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
   border-radius: 100svh;
+
+  pointer-events: all;
   
   transition: 250ms cubic-bezier(0.39, 0.575, 0.565, 1) all;
 }
 
 
-.nav__lists-list button:hover {
+.nav__lists-list:hover button {
   background-color: var(--white-op-50);
   color: var(--white);
+}
+
+.navigation__burger {
+  margin-inline-start: auto;
+  background-color: transparent;
+  fill: var(--white-op-75);
 }
 
 
@@ -72,3 +129,36 @@
 .nav--center {
   justify-content: center;
 }
+
+@media (min-width: 769px) {
+  .navigation {
+    padding: 2rem 3rem;
+  }
+
+  .navigation__logo {
+
+    min-width: 13rem;
+    max-width: 13rem;
+   
+  }
+
+  .navigation__burger {
+    display: none;
+  }
+
+  .navigation__nav {
+    display: block !important;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+};
+
