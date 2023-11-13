@@ -1,7 +1,13 @@
 .social-links nav ul li svg{
   width: 24px;
   height: 24px;
+  fill: var(--dark-cyan-desat);
 
+  transition: 500ms cubic-bezier(0.23, 1, 0.320, 1) all;
+}
+
+.social-links nav ul li:hover svg {
+  fill: var(--white);
 }
 
 .social-links nav ul li:nth-child(3) svg {

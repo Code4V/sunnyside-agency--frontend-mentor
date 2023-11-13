@@ -126,6 +126,16 @@
   color: var(--dark-cyan-mod);
 }
 
+.nav__lists--footer .nav__lists-list {
+  transition: 500ms cubic-bezier(0.23, 1, 0.320, 1) all;
+}
+
+.nav__lists--footer .nav__lists-list:hover {
+  transition: 500ms cubic-bezier(0.23, 1, 0.320, 1) all;
+  color: var(--white);
+}
+
+
 .nav--center {
   justify-content: center;
 }
@@ -140,6 +150,10 @@
     min-width: 13rem;
     max-width: 13rem;
    
+  }
+
+  .navigation--footer {
+    padding-block-end: 1rem !important;
   }
 
   .navigation__burger {

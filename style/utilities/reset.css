@@ -35,6 +35,6 @@ ul{
   list-style-type: none;
 }
 
-li {
-  pointer-events: none;
+li{
+  pointer-events: visible;
 }
