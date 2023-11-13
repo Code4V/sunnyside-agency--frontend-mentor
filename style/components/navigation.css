@@ -45,6 +45,10 @@
   gap: 1.5rem
 }
 
+.nav__lists--smallfont {
+  font-size: 1rem;
+}
+
 
 .nav__lists-list button {
   font-size: 1.25rem;

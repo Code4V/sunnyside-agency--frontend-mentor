@@ -123,6 +123,13 @@
   opacity: .75;
 }
 
+@media (min-width: 376px) {
+  .about-us__information {
+    margin-block-start: 2rem;
+    padding-block-end: 0;
+  }
+}
+
 @media (min-width: 764px) {
   .about-us {
     grid-template-columns: repeat(2, 1fr);

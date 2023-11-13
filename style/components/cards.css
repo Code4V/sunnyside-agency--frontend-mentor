@@ -19,10 +19,12 @@
   color: var(--dark-blue-desat-gray);
 }
 
+
 .card__information h5{
   font-weight: 800;
   font-size: 1.25rem;
 
+  margin-block-start: 5rem;
   margin-block-end: .7rem;
   color: var(--dark-blue-desat)
 }
@@ -35,7 +37,7 @@
 
 @media (min-width: 764px) {
   .card:not(:first-child) {
-    margin-block-start: none;
+    margin-block-start: auto;
   }
 
   .card {
