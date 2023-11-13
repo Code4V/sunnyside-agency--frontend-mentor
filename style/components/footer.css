@@ -1,0 +1,22 @@
+.footer {
+  background-color: var(--dark-cyan-mod-op-50);
+
+  text-align: center;
+
+  padding-block: 6rem;
+}
+
+.footer__icon {
+  width: 100%;
+}
+
+.footer__icon svg {
+  padding-inline: auto;
+  height: 2.5rem;
+
+  min-width: 200px;
+  fill: var(--dark-cyan-desat);
+  opacity: .8;
+
+  margin-block-end: 1.5rem;
+}

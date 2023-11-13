@@ -1,11 +1,11 @@
 .testimonials {
-  margin-block: 8rem;
+  margin-block: 4rem;
   text-align: center;
 }
 
 .testimonials h4 {
   text-transform: uppercase; 
-  letter-spacing: .35rem; 
+  letter-spacing: .25rem; 
 
   color: var(--blue-gray)
 }
@@ -19,10 +19,18 @@
   padding-inline: 1rem;
 
   justify-content: space-evenly;
-
 }
 
 @media (min-width: 764px) {
+
+  .testimonials {
+    margin-block: 8rem;
+  }
+
+  .testimonials h4 {
+    letter-spacing: .35rem;
+  }
+
   .testimonials__testimonies {
     padding-inline: 15rem;
 

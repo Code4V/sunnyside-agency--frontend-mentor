@@ -1,7 +1,8 @@
 .card {
-  max-width: 21.5rem;
+  max-width: 21rem;
 }
 
+.card:not(:first-child), 
 .card > *:not(:first-child) {
   margin-block-start: 3rem;
 }
@@ -13,7 +14,7 @@
 }
 
 .card p {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.75rem;
   color: var(--dark-blue-desat-gray);
 }
@@ -30,4 +31,20 @@
   font-size: 1rem;
 
   color: var(--blue-gray);
+}
+
+@media (min-width: 764px) {
+  .card:not(:first-child) {
+    margin-block-start: none;
+  }
+
+  .card {
+    max-width: 21.5rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    color: var(--dark-blue-desat-gray);
+  }
 }
